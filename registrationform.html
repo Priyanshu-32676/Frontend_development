@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: rgb(60, 0, 67);
+            text-align: center;
+            font-style: italic;
+        }
+        .reg {
+            max-width: 500px;
+            background-color: aquamarine;
+            margin: 40px auto;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .grp {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .grp label {
+            width: 150px;
+            font-weight: bold;
+        }
+        .grp input,
+        .grp select,
+        .grp textarea {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .grp input[type="radio"],
+        .grp input[type="checkbox"] {
+            flex: 0;
+            margin-right: 10px;
+        }
+        .but {
+            text-align: center;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="reg">
+        <form>
+            <h1>Student Registration Form</h1>
+
+            <div class="grp">
+                <label for="name">Student name :</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="grp">
+                <label for="roll">Roll no. :</label>
+                <input type="text" name="roll" id="roll">
+            </div>
+
+            <div class="grp">
+                <label for="fname">Father's name :</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+
+            <div class="grp">
+                <label for="dob">Date of Birth :</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div class="grp">
+                <label for="mob">Mobile no. :</label>
+                <input type="tel" pattern="[0-9]{10}" name="mob" id="mob">
+            </div>
+
+            <div class="grp">
+                <label for="email">Email id :</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="grp">
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="grp">
+                <label>Gender :</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female" style="margin-left: 10px;"> Female
+            </div>
+
+            <div class="grp">
+                <label>Department :</label>
+                <input type="checkbox" name="dept" value="CSE"> CSE
+                <input type="checkbox" name="dept" value="IT"> IT
+                <input type="checkbox" name="dept" value="EEE"> EEE
+                <input type="checkbox" name="dept" value="ECE"> ECE
+                <input type="checkbox" name="dept" value="MEC"> MEC
+            </div>
+
+            <div class="grp">
+                <label for="course">Course :</label>
+                <select name="course" id="course">
+                    <option value="">-- select --</option>
+                    <option value="CSE">CSE</option>
+                    <option value="CSIT">CSIT</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="AIDS">AIDS</option>
+                </select>
+            </div>
+
+            <div class="grp">
+                <label for="city">City :</label>
+                <input type="text" name="city" id="city">
+            </div>
+
+            <div class="grp">
+                <label for="address">Address :</label>
+                <textarea name="address" id="address" rows="4"></textarea>
+            </div>
+
+            <div class="but">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
