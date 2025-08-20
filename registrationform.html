@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            background-color: bisque;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        h1{
+            color: rgb(60, 0, 67);
+            text-align: center;
+            font-style: italic;
+        }
+        .reg{
+            max-width: 500px;
+            background-color: aquamarine;
+             margin: 40px auto;
+             padding: 25px 30px;
+             border-radius: 12px;
+             box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .but{
+            text-align: center;
+        }
+        button:hover{
+            background-color: chartreuse;
+        }
+        .grp {
+            display: flex;
+            margin-bottom: 15px;
+            align-items:center;
+          }
+        
+    </style>
+</head>
+<body>
+    <div class="reg">
+        <form>
+            <h1>Student Registration Form</h1>
+            <div class="grp">
+                
+            <label for="name">Student name :</label>
+            <input type=" text" name="name" id="name">
+            </div>
+            <br>
+            <div class="grp">
+                <label for="Roll no">Roll no. :</label>
+                <input type="text" name="Roll no" id="Roll no">
+            </div>
+            <br>
+            <div class="grp">
+                <label for="fname">Father's name :</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <br>
+            <div class="grp">
+                <label for="dob">Date of Birth :</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <br>
+            <div class="grp">
+                <label for="mob">Mobile no. :</label>
+                <input type="tel" pattern="[0-9]{10}" name="mob" id="mob" >
+            </div>
+            <br>
+            <div class="grp">
+                <label for="email">Email id :</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <div class="grp">
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <br>
+            <div class="grp">
+                <label for="Gender">Gender :</label>
+                <input type="radio" name="Gender" id="Gender">Male
+                <input type="radio" name="Gender" id="Gender">Female
+            </div>
+            <div class="grp">
+                <label for="dept">Department :</label>
+                <input type="checkbox" name="dept" id="dept">CSE
+                <input type="checkbox" name="dept" id="dept">IT
+                <input type="checkbox" name="dept" id="dept">EEE
+                <input type="checkbox" name="dept" id="dept">ECE
+                <input type="checkbox" name="dept" id="dept">MEC.
+            </div>
+            <br>
+            <div class="grp">
+            <label for="course">Course :</label>
+            <select>
+            <option value="select">!-----select-----!</option>
+                <option value="CSE">CSE </option>
+                <option value="CSIT">CSIT</option>
+                <option value="EEE">EEE</option>
+                <option value="ECE">ECE</option>
+                <option value="AIDS">AIDS</option>
+            </select>
+            </div>
+            <br>
+            <div class="grp">
+                <label for="city">City :</label>
+                <input type="text" name="city" id="city">
+            </div>
+             <br>
+            <div class="grp">
+           
+            <label for="Address">Address :</label>
+            <textarea rows="10" required></textarea>
+            </div>
+            <br>
+            <div class="but">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
